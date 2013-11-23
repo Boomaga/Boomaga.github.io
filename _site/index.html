@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="keywords" content="boomaga, linux, printer, booklet, PDF, Postscript, CUPS">
+    <title>Boomaga - Virtual Printer</title>
+    <link rel="icon" type="image/png" href="/css/images/favicon.png" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Jura:400,500,600,300' rel='stylesheet' type='text/css' />
+
+    <script src="/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.touchwipe.1.1.1.js" type="text/javascript"></script>
+    <!--<script src="js/jquery.carouFredSel-5.5.0-packed.js" type="text/javascript"></script>-->
+    <!--[if lt IE 9]>
+        <script src="js/modernizr.custom.js"></script>
+    <![endif]-->
+    <!--<script src="js/functions.js" type="text/javascript"></script>-->       
+    <link rel="stylesheet" href="/css/colorbox/colorbox.css" />
+     <script src="/js/jquery.colorbox-min.js"></script>
+</head>
+<body>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+            <div class="shell">
+                <div class="header-top">
+                    
+                    <nav id="navigation">
+                        <ul>
+  
+    <li class="active"><a href="/index.html">Home</a></li>
+  
+    <li><a href="/screenshots/">Screenshots</a></li>
+  
+    <li><a href="/download/">Download</a></li>
+  
+    <li><a href="https://github.com/Boomaga/boomaga/wiki">Wiki</a></li>
+  
+    <li><a href="https://github.com/Boomaga/boomaga/issues">Bug tracker</a></li>
+      
+</ul>
+
+                    </nav>
+                    <div class="cl">&nbsp;</div>
+                </div>
+                 <div class="intro">
+    <div class="intro-text">
+        <h5>Opensource virtual printer</h5>
+        <h1>Boomaga</h1>
+            Boomaga is a virtual printer for viewing a document before printing it out using the physical printer and help you get your documents prepared a bit before printing.
+            <a href="/download/" class="green-btn">Download</a>
+    </div>
+    <a class=screenshot href="/boomaga.png"><img style='height: 500px; qfloat: rigth; border: 3px solid #242424; padding-right: 80px;' class="img-back" src="/boomaga.png"></a>
+<script>
+    jQuery('a.screenshot').colorbox({ opacity:0 });
+</script>    
+<div>
+ 
+            </div>
+        </header>
+        <!-- end of header -->
+        
+        <!-- shell -->
+        <div class="shell">
+            <!-- main -->
+            <div class="main">
+                
+                <section class="content"><h1>About the program</h1>
+
+<p>Boomaga (BOOklet MAnager) is a virtual printer for viewing a document before printing it out using the physical printer.</p>
+
+<p>The program is very simple to work with. Running any program, click “print” and select “Boomaga” to see in several seconds (CUPS takes some time to respond) the Boomaga window open. If you print out one more document, it gets added to the previous one, and you can also print them out as one.</p>
+
+<p>Regardless of whether your printer supports duplex printing or not, you would be able to easily print on both sides of the sheet. If your printer does not support duplex printing, point this out in the settings, and Booklet would ask you to turn over the pages half way through printing your document.</p>
+
+<p>The program can also help you get your documents prepared a bit before printing. At this stage Boomaga makes it possible to:</p>
+
+<ul>
+<li>Paste several documents together.</li>
+<li>Print several pages on one sheet.
+
+<ul>
+<li>1, 2, 4, 8 pages per sheet</li>
+<li>Booklet. Folding the sheets in two, you’ll get a book.</li>
+</ul></li>
+</ul>
+
+<p>Boomaga is an open source project distributed under the GPLv2 license (some files are distributed under the LGPLv2+ license). It would be more convenient to install the program from the package for your distribution; you can access the list of the packages at <a href="download">this page</a>. You can also build the program from the sources; you can download the sources of the latest stable version here. The version for developers is available on our page at <a href="https://github.com/Boomaga/boomaga">github</a>.</p>
+
+<p>Address your preferences and error messages to our <a href="https://github.com/Boomaga/boomaga/issues">Issue tracker</a>.</p>
+
+<hr>
+
+<h1>Why you may need it?</h1>
+
+<h2>Instance 1</h2>
+
+<p>Think of all the times you were getting on paper something different than you expected. You may once have forgotten to give the number of pages in the print box, or a document from your office program did not fit the sheet. Boomaga makes possible previewing before actual printing to see the real way the final version would look like.</p>
+
+<h2>Instance 2</h2>
+
+<p>Let’s say you wish to print out and read a few documents in peace and quiet. The conventional printout produces several A4 sheaves. They are awkward to read and store. Boomaga gets you one compact A5 booklet. It is more convenient to read than the A4 format and it fits snugly into a bookshelf and takes much less paper.</p>
+
+<h2>Instance 3 (Don&#39;t try this at home)</h2>
+
+<p>You have an exam to take and you feel like you are all at sea. Boomaga offers a layout of 8 pages per sheet (8Up) enabling you to print crib notes for your upcoming exam.</p>
+
+<p><em>Disclaimer</em><br>
+  <em>The program developers give no guarantees and decline all responsibility for your failure or success.</em></p>
+
+<hr>
+
+<h1>How it Works</h1>
+
+<p>Boomaga is comprised of a backend for CUPS, and a graphic program for the viewing and editing of documents.</p>
+
+<p>A document printed out with Boomaga gets into CUPS. CUPS creates a PostScript file and passes it on to the backend. In this instance this is a backend for Boomaga. The backend seeks out an active session for the user who sends the document for getting printed. Via the D-Bus, it subsequently triggers the GUI part of Boomaga (unless it already runs) and communicates to it the name of the PostScript file. GUI scans the PostScript file and displays its content. Used for this purpose is the GHostScript library.</p>
+
+<hr>
+
+<h1>Nothing works!</h1>
+
+<p>Our backend-е for CUPS uses a search for user session; it is yet to be completely debugged and may not work in some environments. Please, look through the error messages in CUPS logs, and send in discovered bugs to <a href="https://github.com/Boomaga/boomaga/issues">Issue tracker</a>, or contact the developers.</p>
+</section>
+            </div>
+            <!-- end of main -->
+        </div>
+        <!-- end of shell --> 
+                <div id="footer">
+            <!-- shell -->
+            <div class="shell">
+                <!-- footer-cols -->
+                <div class="footer-cols">
+                    <div class="col" id="footer-navigation">
+                        <h2>Navigation</h2>
+                        <ul>
+  
+    <li class="active"><a href="/index.html">Home</a></li>
+  
+    <li><a href="/screenshots/">Screenshots</a></li>
+  
+    <li><a href="/download/">Download</a></li>
+  
+    <li><a href="https://github.com/Boomaga/boomaga/wiki">Wiki</a></li>
+  
+    <li><a href="https://github.com/Boomaga/boomaga/issues">Bug tracker</a></li>
+      
+</ul>
+
+                    </div>
+
+                    <div class="col" id="footer-license">
+                        <h2>License</h2>
+                        Boomaga is released under the GNU Library Public License (LGPL) version 2. A copy of the license is available <a href="http://www.gnu.org/copyleft/lesser.html">here</a>. This is an open source project. You are free to download and distribute the software under the terms of the license.
+                    </div>
+
+                    <div class="col" id="footer-programs">
+                        <h2>My other projects</h2>
+                        <p><a href="http://razor-qt.org/">Razor-qt</a> - The free and open source lightweight desktop environment.</p>
+                        <p><a href="http://flacon.github.io/">Flacon</a> extracts individual tracks from one big audio file containing the entire album of music and saves them as separate audio files.</p>                    
+                    </div>
+                    <div class="cl">&nbsp;</div>
+                </div>
+                <!-- end of footer-cols -->
+                <div class="footer-bottom">
+                    <p class="rf">This site based on <a target="_blank" href="http://chocotemplates.com/corporate/digy/">Digi Template</a> by <a target="_blank" href="www.ChocoTemplates.com">ChocoTemplates</a></p>
+                </div>
+            </div>
+            <!-- end of shell -->
+        </div>
+
+    </div>
+    <!-- end of wrapper -->
+</body>
+</html>

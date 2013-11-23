@@ -1,0 +1,31 @@
+name: Boomaga
+markdown: redcarpet
+pygments: true
+baseurl:
+redcarpet:
+  extensions:
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
+    - fenced_code_blocks
+program:
+  release:
+    version: 0.2.0
+    link: https://github.com/boomaga/boomaga/archive/v0.2.0.tar.gz
+
+menu_items:
+  - title:      Home
+    link:       /index.html
+  
+  - title:      Screenshots
+    link:       /screenshots/
+    
+  - title:      Download
+    link:       /download/
+    
+  - title:      Wiki
+    link:       https://github.com/Boomaga/boomaga/wiki
+    
+  - title:      Bug tracker
+    link:       https://github.com/Boomaga/boomaga/issues

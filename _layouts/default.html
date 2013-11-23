@@ -1,0 +1,34 @@
+{% include html_head.html %}
+<body>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+            <div class="shell">
+                <div class="header-top">
+                    {% if page.url != "/index.html" %}<a href="/index.html"><h1>Boomaga</h1></a>{% endif %}
+                    <nav id="navigation">
+                        {% include menu.html %}
+                    </nav>
+                    <div class="cl">&nbsp;</div>
+                </div>
+                {% if page.url == "/index.html" %} {% include index/intro.html %} {% endif %}
+            </div>
+        </header>
+        <!-- end of header -->
+        
+        <!-- shell -->
+        <div class="shell">
+            <!-- main -->
+            <div class="main">
+                {% if page.url == "DIASBLE/index.html" %} {% include index/3steps.html %} {% endif %}
+                <section class="content">{{ content }}</section>
+            </div>
+            <!-- end of main -->
+        </div>
+        <!-- end of shell --> 
+        {% include footer.html %}
+    </div>
+    <!-- end of wrapper -->
+</body>
+</html>
