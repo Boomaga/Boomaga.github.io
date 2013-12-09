@@ -3,30 +3,29 @@ layout: default
 title: Boomaga - Screenshots
 menuItem: screenshots
 
-images_dev:
+images_stable:
+  - preview:     v0.3_mainwindow-s.png
+    full:        v0.3_mainwindow.png
+    description: Main window
+
+  - preview:     v0.3_printer_settings-s.png
+    full:        v0.3_printer_settings.png
+    description: Printer prefferences
+
+
+images_old:  
   - preview:     v0.2_mainwindow-s.png
     full:        v0.2_mainwindow.png
-    description: Main window (development version)
-
+    description: Main window (0.2 version)
+    
   - preview:     v0.2_printer_settings-s.png
     full:        v0.2_printer_settings.png
-    description: Printer prefferences  (development version)
-
-
-images_stable:  
-  - preview:     v0.1_mainwindow-s.png
-    full:        v0.1_mainwindow.png
-    description: Main window (stable version)
-    
-  - preview:     v0.1_printer_settings-s.png
-    full:        v0.1_printer_settings.png
-    description: Printer prefferences  (stable version)
+    description: Printer prefferences  (0.2 version)
         
 ---
 <h1>Screenshots</h1>
-<h2>Development version</h2>
-{% include gallery.html images=page.images_dev    group="screenshots" %}
 
 <h2>Stable version</h2>
 {% include gallery.html images=page.images_stable group="screenshots" %}
+
 
