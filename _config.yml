@@ -11,8 +11,8 @@ redcarpet:
     - fenced_code_blocks
 program:
   release:
-    version: 0.3.0
-    link: https://github.com/boomaga/boomaga/archive/v0.3.0.tar.gz
+    version: 0.4.0
+    link: https://github.com/boomaga/boomaga/archive/v0.4.0.tar.gz
 
 menu_items:
   - title:      Home

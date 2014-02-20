@@ -3,6 +3,11 @@ layout: default
 title: Boomaga - Virtual Printer
 menuItem: Home
 ---
+
+{% for post in site.categories.releases limit 5 %}{{ post.content }}<i>{{ post.date | date_to_string}}</i>{% endfor %}
+
+----------------------------
+
 About the program
 =================
 
