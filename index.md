@@ -4,7 +4,7 @@ title: Boomaga - Virtual Printer
 menuItem: Home
 ---
 
-{% for post in site.categories.releases limit 5 %}{{ post.content }}<i>{{ post.date | date_to_string}}</i>{% endfor %}
+{% for post in site.categories.releases limit:1 %}{{ post.content }}<i>{{ post.date | date_to_string}}</i>{% endfor %}
 
 ----------------------------
 
