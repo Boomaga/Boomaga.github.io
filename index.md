@@ -6,6 +6,8 @@ menuItem: Home
 
 {% for post in site.categories.releases limit:1 %}{{ post.content }}<i>{{ post.date | date_to_string}}</i>{% endfor %}
 
+<div style="text-align: right; margin-top:-35px;"><a href="releases/">All releases</a></div>
+
 ----------------------------
 
 About the program
