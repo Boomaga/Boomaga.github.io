@@ -1,4 +1,4 @@
-<ul>
+<ul class="navigation-content">
   {% for item in site.menu_items %}
     {% if item.title == page.menuItem %}<li class="active">{% else %}<li>{% endif %}<a href="{{ item.link }}">{{ item.title }}</a></li>
   {% endfor %}    

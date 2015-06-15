@@ -29,3 +29,6 @@ menu_items:
 
   - title:      Bug tracker
     link:       https://github.com/Boomaga/boomaga/issues
+
+  - title:      <span class="octicon octicon-mark-github"></span>
+    link:       https://github.com/Boomaga/boomaga
