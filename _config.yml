@@ -1,6 +1,6 @@
 name: Boomaga
 markdown: kramdown
-highlighter: true
+highlighter: rouge
 baseurl:
 redcarpet:
   extensions:
