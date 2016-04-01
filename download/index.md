@@ -6,7 +6,12 @@ menuItem: Download
 
 Ubuntu
 ======
-Ubuntu users can use repository at [launchpad](https://launchpad.net/~boomaga/+archive/ppa). Open up a terminal and input these commands:
+Boomaga is available from Ubuntu repositories and can be installed via the Software Center or with this command in a terminal:
+
+    sudo apt-get install boomaga
+
+<br>
+But it usually takes months for new versions of a package to reach the official repositories so they may quickly become outdated. That is why it is preferred to install Boomaga from [our PPA repositories](https://launchpad.net/~boomaga/+archive/ppa), which are available for all modern Ubuntu releases. Open up a terminal and input these commands:
 
     sudo add-apt-repository ppa:boomaga
     sudo apt-get update
@@ -16,9 +21,16 @@ Ubuntu users can use repository at [launchpad](https://launchpad.net/~boomaga/+a
 
 Rosa
 ====
-_Rosa_ users can install it from the official repositories.
+Latest version of Boomaga is available from Rosa repositories and can be installed via Software Center or with this command in a terminal:
 
-    urpmi boomaga
+    sudo urpmi boomaga
+
+
+Fedora
+======
+Boomaga is available from Fedora repositories and can be installed via Software Center or with this command in a terminal:
+
+    sudo dnf install boomaga
 
 
 Other distribution
