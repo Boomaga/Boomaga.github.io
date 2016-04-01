@@ -1,6 +1,6 @@
 name: Boomaga
-markdown: redcarpet
-pygments: true
+markdown: kramdown
+highlighter: true
 baseurl:
 redcarpet:
   extensions:
