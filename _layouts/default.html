@@ -37,14 +37,14 @@
         <header class="header">
             <div class="shell">
                 <div class="header-top">
-                    {% if page.url != "/index.html" %}<a href="/index.html"><h1>Boomaga</h1></a>{% endif %}
+                    {% if page.url != "/" and page.url != "/index.html" %}<a href="/index.html"><h1>Boomaga</h1></a>{% endif %}
                     <nav id="navigation" class="navigation"><a id="navBtn">Menu</a>
                         {% include menu.html %}
                     </nav>
                     <div class="cl">&nbsp;</div>
                 </div>
                 {{page.url}}
-                {% if page.url == "/index.html" %} {% include index/intro.html %} {% endif %}
+                {% if page.url == "/" or page.url == "/index.html" %} {% include index/intro.html %} {% endif %}
             </div>
         </header>
         <!-- end of header -->
