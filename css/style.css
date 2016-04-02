@@ -288,13 +288,6 @@ textarea { overflow: auto; }
 	padding-right: 32px; 
 }
 
-/* Mobile version ***********************/
-@media only screen and (max-width: 767px) {
-	.header-top { padding-right: 0; }
-	#DownloadBtn { display: none; }
-}
-/* Mobile version ***********************/
-
 .header-top h1 {
     font-size: 32px;
     color: #F48304; 
@@ -481,6 +474,9 @@ pre {
 }
 
 
+/* **************************************
+ * Mobile version
+ ****************************************/
 @media only screen and ( max-width: 768px) { 
 	.screenshot { display: none; }
 	.shell { width: 100%;  padding: 0;} 
@@ -530,4 +526,9 @@ pre {
 	#GitHubLink:after {
 		content: "GitHub";
 	}
+
+	.header-top { padding-right: 0; }
+	#DownloadBtn { display: none; }
+	#intro-img { display: none; }
+
 }
