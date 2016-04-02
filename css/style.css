@@ -27,9 +27,6 @@ a img { border: 0; }
 a.more { background: url(images/green-arr.png) no-repeat 0 5px; padding-left: 11px; color: #72ae13; text-decoration: underline; font-size: 12px; }
 a.more:hover { text-decoration: none;  }
 
-/*font-family: 'Coda', cursive;*/
-/*font-family: 'Jura', sans-serif;*/
-
 article, aside, details, footer, header, menu, nav, section { display: block; }
 input, textarea, select { font-size: 12px; font-family: arial, sans-serif; }
 textarea { overflow: auto; }
@@ -177,7 +174,7 @@ textarea { overflow: auto; }
 .pagination a.selected { background-position: 0 -20px; }
 
 .main { padding: 54px 0 20px 0; border-top: 1px solid #fff;  background: url(images/main.png) repeat-x 0 0; box-shadow: 0px -4px 10px rgba(0,0,0,0.4); -moz-box-shadow: 0px -4px 10px rgba(0,0,0,0.4); -webkit-box-shadow: 0px -4px 10px rgba(0,0,0,0.4); -o-box-shadow: 0px -4px 10px rgba(0,0,0,0.4);  }
-.main h2 { font-size: 22px; color: #000; font-family: 'Jura', sans-serif; font-weight: 700; padding-bottom: 10px; text-transform: uppercase;  }
+.main h2 { font-size: 22px; color: #000; font-family: 'Helvetica Neue', Helvetica, arial, sans-serif; font-weight: 700; padding-bottom: 10px; text-transform: uppercase;  }
 .main p a { text-decoration: underline; }
 .main p a:hover { text-decoration: none; }
 .main section { margin-bottom: 20px;  }
@@ -366,8 +363,8 @@ a.green-btn:hover {
     padding-top: 48px;
     font-size: 22px; 
     color: #000; 
-    font-family: 'Jura', sans-serif; 
-    font-weight: 700; 
+    font-family:  'Helvetica Neue', Helvetica, arial, sans-serif;
+    font-weight: normal; 
     padding-bottom: 10px; 
     text-transform: uppercase;  
 }
@@ -380,8 +377,8 @@ a.green-btn:hover {
     padding-top: 24px;
     font-size: 18px; 
     color: #000; 
-    font-family: 'Jura', sans-serif; 
-    font-weight: normal; 
+    font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
+    font-weight: normal;
     padding-bottom: 10px; 
     text-transform: none;  
 }
