@@ -17,7 +17,7 @@ body {
 	font-size: 12px;
 	line-height: 22px;
 	font-family: arial, sans-serif;
-	color: #828282;
+	color: #323232;
 	min-width: 100%;
 }
 
@@ -299,7 +299,7 @@ textarea { overflow: auto; }
 
 
 #footer { background-color: #212121;}
-#footer .shell { background-color: #282828; padding: 26px 0; }
+#footer .shell { background-color: #282828; color: #828282; padding: 26px 0; }
 
 .intro {
     position: relative;
