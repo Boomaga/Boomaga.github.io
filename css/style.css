@@ -51,8 +51,8 @@ textarea { overflow: auto; }
 #logo a { height: 57px; display: block;  background: url(images/logo.png) no-repeat 0 0; text-indent: -4000px; }
 
 #navigation { float: right; padding-top: 13px; }
-#navigation ul, #navBtn { font-size: 17px; font-family: 'Coda', cursive; font-weight: 400;}
-#navigation ul { list-style: none; list-style-position: outside; font-size: 17px; font-family: 'Coda', cursive; font-weight: 400;  }
+#navigation ul, #navBtn { font-size: 17px; }
+#navigation ul { list-style: none; list-style-position: outside; font-size: 17px; }
 #navigation ul li { display: inline; padding-left: 34px; }
 #navigation ul li a { color: #d5d4d4; }
 #navigation ul li a:hover,
