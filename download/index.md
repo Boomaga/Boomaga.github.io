@@ -4,14 +4,16 @@ title: Boomaga - Download
 menuItem: Download
 ---
 
-Ubuntu
+Ubuntu and Debian
 ======
-Boomaga is available from Ubuntu repositories and can be installed via the Software Center or with this command in a terminal:
+
+Boomaga is available from Ubuntu repositories in older version of Ubuntu and Debian
 
     sudo apt-get install boomaga
 
-<br>
-But it usually takes months for new versions of a package to reach the official repositories so they may quickly become outdated. That is why it is preferred to install Boomaga from [our PPA repositories](https://launchpad.net/~boomaga/+archive/ppa), which are available for all modern Ubuntu releases. Open up a terminal and input these commands:
+In recent versions of Ubuntu and Debian, boomaga got removed because it lacked Qt6 support. However, Qt6 support has been reinstated in the latest version, and you can install a prebuilt .deb package from [GitHub releases](https://github.com/Boomaga/boomaga/releases/latest).
+
+Alternatively, you can install Boomaga from [our PPA repositories](https://launchpad.net/~boomaga/+archive/ppa), which are available for all modern Ubuntu releases. Open up a terminal and input these commands:
 
     sudo add-apt-repository ppa:boomaga
     sudo apt-get update
@@ -32,6 +34,11 @@ Boomaga is available from Fedora repositories and can be installed via Software 
 
     sudo dnf install boomaga
 
+Arch
+======
+You can install boomaga from the AUR with your favorite AUR manager, e.g. `yay`.
+
+    yay -S boomaga
 
 Other distribution
 ==================
