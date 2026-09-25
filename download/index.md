@@ -7,18 +7,17 @@ menuItem: Download
 Ubuntu and Debian
 ======
 
-Boomaga is available from Ubuntu repositories in older version of Ubuntu and Debian
+If you are using an older Ubuntu (22.04 or earlier) or Debian release (11 or earlier), Boomaga is usually available in the distribution repositories:
 
     sudo apt-get install boomaga
 
-In recent versions of Ubuntu and Debian, boomaga got removed because it lacked Qt6 support. However, Qt6 support has been reinstated in the latest version, and you can install a prebuilt .deb package from [GitHub releases](https://github.com/Boomaga/boomaga/releases/latest).
-
-Alternatively, you can install Boomaga from [our PPA repositories](https://launchpad.net/~boomaga/+archive/ppa), which are available for all modern Ubuntu releases. Open up a terminal and input these commands:
+For newer Ubuntu (24.04+) or Linux Mint releases, use the official Boomaga PPA:
 
     sudo add-apt-repository ppa:boomaga
     sudo apt-get update
     sudo apt-get install boomaga
 
+For modern Debian releases (12+), install the prebuilt .deb package from [GitHub releases](https://github.com/Boomaga/boomaga/releases/latest).
 
 
 Rosa
