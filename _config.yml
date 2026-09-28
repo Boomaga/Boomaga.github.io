@@ -24,9 +24,6 @@ menu_items:
   - title:      Download
     link:       /download/
 
-  - title:      Donate
-    link:       /donate
-
   - title:      Wiki
     link:       https://github.com/Boomaga/boomaga/wiki
 
