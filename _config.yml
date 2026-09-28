@@ -12,7 +12,6 @@ redcarpet:
 program:
   release:
     version: 3.9.2
-3.9.2
     link: https://github.com/boomaga/boomaga/archive
 
 menu_items:
