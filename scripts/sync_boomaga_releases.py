@@ -62,18 +62,18 @@ def update_config_version(config_path: str, tag: str, dry_run: bool = False) -> 
 
     original = config_file.read_text(encoding="utf-8")
     pattern = r"(?ms)(^program:\n\s*release:\n\s*version:\s*)([^\n]+)"
-    updated = re.sub(pattern, lambda m: f"{m.group(1)}{version}", original, count=1)
+    updated, replacements = re.subn(
+        pattern, lambda m: f"{m.group(1)}{version}", original, count=1
+    )
 
-    if updated == original:
-        marker = "program:\n  release:\n    version: "
-        if marker not in original:
-            raise RuntimeError("Could not find program.release.version in config file")
-        updated = original.replace(marker, marker + version + "\n")
+    if replacements == 0:
+        raise RuntimeError("Could not find program.release.version in config file")
 
     if dry_run:
         return f"Dry run: would update {config_file} to version {version}"
 
-    config_file.write_text(updated, encoding="utf-8")
+    if updated != original:
+        config_file.write_text(updated, encoding="utf-8")
     return f"Updated {config_file} to version {version}"
 
 
